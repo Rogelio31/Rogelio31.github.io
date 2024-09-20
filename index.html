@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lozano Portfolio</title>
+    <style>
+    
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+										}
+
+										header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+										}
+
+										header h1 {
+    margin: 0;
+										}
+
+										nav ul {
+    list-style: none;
+    padding: 0;
+										}
+
+										nav ul li {
+    display: inline;
+    margin: 0 15px;
+										}
+
+										nav ul li a {
+    color: #fff;
+    text-decoration: none;
+										}
+
+										section {
+    padding: 20px;
+    margin: 10px;
+										}
+
+										#about {
+    background-color: #f4f4f4;
+    text-align: center;
+										}
+
+										.profile-pic {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+										}
+
+										table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+										}
+
+										table, th, td {
+    border: 1px solid #ddd;
+										}
+
+										th, td {
+    padding: 8px;
+    text-align: left;
+										}
+
+										th {
+    background-color: #333;
+    color: white;
+										}
+
+										form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+										}
+
+									form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+										}
+
+										form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+										}
+
+										form input[type="submit"]:hover {
+    background-color: #555;
+										}
+
+										footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+										}
+
+										footer ul {
+    list-style: none;
+    padding: 0;
+										}
+
+										footer ul li {
+    display: inline;
+    margin: 0 10px;
+										}
+
+										footer ul li a {
+    color: #fff;
+    text-decoration: none;
+										}
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a web developer passionate about creating interactive and user-friendly websites. I have experience in HTML, CSS and various front-end frameworks.</p>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    </section>
+
+    <section id="projects">
+        <h2>My Website</h2>
+        <table>
+            <tr>
+                <th>Websites</th>
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>W3schools</td>
+                <td>A largest web developer site to learn different programming languages.</td>
+                <td><a href="https://www.w3schools.com">View Website</a></td>
+            </tr>
+            <tr>
+                <td>Github</td>
+                <td>A developer platform that allows developers to create, store, manage and share their code.</td>
+                <td><a href="https://github.com/">View Website</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <h2>Follow Me</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+            <li><a href="https://www.github.com">GitHub</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+        </ul>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
+
